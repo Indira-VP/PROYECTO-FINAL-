@@ -55,13 +55,15 @@ def mostrar_mascotas(lista):
     print("\n🐾 Lista de Mascotas Ordenada:\n")
     lista_ordenada = quicksort(lista)
     for mascota in lista_ordenada:
+        print(f"---------------------------------- ") 
         print(f"🐾 Nombre: {mascota.nombre}") 
         print(f"🐾 Especie: {mascota.especie}")
         print(f"🐾 Raza: {mascota.raza} ") 
         print(f"🐾 Edad: {mascota.edad} años") 
         print(f"🐾 Sexo: {mascota.sexo}  ") 
         print(f"🐾 Dueño: {mascota.dueño} ") 
-        print(f"🐾 Teléfono: {mascota.telefono} ") 
+        print(f"🐾 Teléfono: {mascota.telefono}\n") 
+        print(f"---------------------------------- ") 
 
 # Eliminar los datos de una mascota de la lista
 def eliminar_mascota(lista, nombre):
