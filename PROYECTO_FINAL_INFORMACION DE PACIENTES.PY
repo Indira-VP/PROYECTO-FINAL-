@@ -35,9 +35,8 @@ def agregar_mascota(lista, mascota):
             print(f"❗ La mascota '{mascota.nombre}' ya está registrada.")
             return
     lista.append(mascota)
-    print("\n✔️ Los datos de'{mascota.nombre}' fueron exitosamente agregados.🤗🐾.")
+    print(f"\n✔️ Los datos de '{mascota.nombre}' fueron exitosamente agregados. 🤗🐾")
 
-# Implementación del método QuickSort
 def quicksort(lista):
     if len(lista) <= 1:
         return lista
@@ -110,6 +109,7 @@ def principal():
         elif opcion == "4":
             guardar_en_archivo(mascotas, archivo)
             print("Todos los datos ingresados, han sido exitosamente guaradados ¡Chaitoo! 👋")
+            
             break
 
         else:
